@@ -3,10 +3,10 @@ import { head } from "../components/head.js";
 import { header } from "../components/header.js";
 
 export function page404() {
-  return `
+    return `
         <!DOCTYPE html>
         <html lang="en">
-        ${head("404", ["main", "header"])}
+        ${head('404', ['main', 'header'])}
         <body>
             ${header()}
 

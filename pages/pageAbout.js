@@ -3,12 +3,12 @@ import { head } from "../components/head.js";
 import { header } from "../components/header.js";
 
 export function pageAbout() {
-  return `
+    return `
         <!DOCTYPE html>
         <html lang="en">
-        ${head("Apie projekta", ["main", "header"])}
+        ${head('Apie projekta', ['main', 'header'])}
         <body>
-            ${header("/about")}
+            ${header('/about')}
 
             <main>
                 <h1>Apie projekta</h1>

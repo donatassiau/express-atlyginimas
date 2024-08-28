@@ -1,5 +1,5 @@
 export function header(currentPageHref) {
-    return `
+  return `
         <header class="">
             <img src="/img/logo.png" alt="Logo">
             <nav>

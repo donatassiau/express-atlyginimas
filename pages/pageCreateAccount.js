@@ -1,18 +1,26 @@
 import { footer } from "../components/footer.js";
 import { head } from "../components/head.js";
 import { header } from "../components/header.js";
+import { accountsData } from "../data/accountsData.js";
 
 export function pageCreateAccount() {
-  const date = new Date();
-  const y = date.getFullYear();
-  const m = (date.getMonth() < 9 ? "0" : "") + (date.getMonth() + 1);
-  const d = (date.getDate() < 10 ? "0" : "") + date.getDate();
-  const maxDate = `${y}-${m}-${d}`;
+    const date = new Date();
+    const y = date.getFullYear();
+    const m = (date.getMonth() < 9 ? '0' : '') + (date.getMonth() + 1);
+    const d = (date.getDate() < 10 ? '0' : '') + date.getDate();
+    const maxDate = `${y}-${m}-${d}`;
 
-  return `
+    accountsData.push({
+        name: 'Petras',
+        date: '2020-03-14',
+        rate: 2.73,
+        salary: '---',
+    });
+
+    return `
         <!DOCTYPE html>
         <html lang="en">
-        ${head("", ["main", "header", "button", "form"])}
+        ${head('', ['main', 'header', 'button', 'form'])}
         <body>
             ${header()}
 
